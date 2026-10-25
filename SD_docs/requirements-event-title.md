@@ -7,6 +7,9 @@
 6. הפונקציה getClientGallery מחזירה את title ישירות מ-event.title של האירוע השמור. (ראיה: src/services/event-service.ts, שורות 20-29)
 7. אין כרגע דרך ב-API לשנות שם אירוע: ב-app.ts אין כתובת PUT/PATCH/DELETE, וב-event-service.ts אין פונקציית עדכון. (ראיה: src/http/app.ts, src/services/event-service.ts)
 8. הזיהוי בכל הכתובות הוא כותרת הדגמה (x-photographer-id / x-client-id) ולא אימות אמיתי. (ראיה: הערה "Demo identity only" ב-src/http/app.ts)
+9. במקרה שישלח פרמטר ךא מסוג string - התוכנית תיפול, ולכן כדאי לטפל בזה קודם- להוסיף בדיקה.
+
+הנחה: ?
 
 
 ## איך שם האירוע מגיע לגלריה (מצב קיים)
