@@ -9,8 +9,6 @@
 8. הזיהוי בכל הכתובות הוא כותרת הדגמה (x-photographer-id / x-client-id) ולא אימות אמיתי. (ראיה: הערה "Demo identity only" ב-src/http/app.ts)
 9. במקרה שישלח פרמטר ךא מסוג string - התוכנית תיפול, ולכן כדאי לטפל בזה קודם- להוסיף בדיקה.
 
-הנחה: ?
-
 
 ## איך שם האירוע מגיע לגלריה (מצב קיים)
 1. הלקוחה פונה ל-GET /client/events/:eventId/gallery עם הכותרת x-client-id. (ראיה: src/http/app.ts, שורות 27-28)
